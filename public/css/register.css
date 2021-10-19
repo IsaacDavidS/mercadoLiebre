@@ -1,0 +1,306 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  background-color: #d1c6c6;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  color: #012964;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 12px;
+}
+/* HEADER*/
+.main-header {
+  padding: 5%;
+}
+header {
+  background-color: #eac926;
+}
+.logo {
+  width: 50%;
+  padding: 10px;
+}
+.logo-img {
+  width: 90%;
+}
+
+.main-header p {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 15px;
+}
+.secondary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.busqueda {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5px;
+  width: 49%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  color: #666;
+}
+.search {
+  display: flex;
+  width: 100%;
+}
+.search input {
+  border: none;
+  width: 90%;
+}
+.search button {
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.lupa i {
+  font-size: 17px;
+}
+header nav {
+  font-size: 12px;
+  display: none;
+}
+header ul li {
+  list-style-type: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+.burger-menu {
+  text-align: center;
+}
+.burger-menu i {
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  margin: 10px 0px 20px 0px;
+  padding: 15px;
+}
+
+.banner img {
+  width: 100%;
+}
+/* creacion cuenta */
+main {
+  box-shadow: 0px 0px 10px rgb(100 100 100);
+  background-color: #ffffff;
+  margin: 20px 20px;
+  
+}
+
+
+.formulario {
+  text-align: center;
+  padding: 30px;
+}
+
+.form-style {
+  height: 30px;
+}
+
+.formulario .fas,
+.formulario .far {
+  font-size: 20px;
+  margin-right: 3px;
+  color: #012964;
+}
+
+.perfil,
+.categorias {
+  padding: 10px;
+}
+
+.encabezado {
+  font-size: 20px;
+  color: #012964;
+}
+
+.formulario button {
+  background-color: #3582f5;
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 7px;
+  font-size: 16px;
+  border: none;
+}
+
+form.formulario button:hover {
+  background-color: #001463;
+  cursor: pointer;
+}
+
+/* FOOTER*/
+
+footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 30px 0;
+  width: 90%;
+  margin: 0 auto;
+}
+.fa-credit-card,
+.fa-gift,
+.fa-user-shield {
+  color: #1259c3;
+  font-size: 2em;
+  cursor: pointer;
+}
+footer article {
+  margin: 40px 0;
+  color: #666;
+}
+footer article div {
+  margin-bottom: 9px;
+}
+/* MEDIA-QUERIES */
+
+@media (min-width: 481) {
+  .burger-menu {
+    display: block;
+  }
+  header nav {
+    display: none;
+  }
+  /*Articulos*/
+  main section article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 45%;
+  }
+  main section .productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  article .main-article {
+    border-top: 1px solid #ebebeb;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  .descuento,
+  .precio {
+    width: 50%;
+  }
+  .descripcion {
+    /* display: block;*/
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 781px) {
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .secondary {
+    width: 153%;
+  }
+  .busqueda {
+    margin-left: 5px;
+  }
+  .secondary p {
+    font-size: 20px;
+  }
+
+  header ul li a {
+    font-size: 15px;
+  }
+
+  .main-header p {
+    padding-top: 12px;
+    font-size: 16px;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+  }
+
+  header nav ul li a {
+    margin: 10px;
+  }
+
+  header nav ul li a i {
+    color: #0044aa;
+  }
+  .burger-menu {
+    display: none;
+  }
+
+  main {
+    margin: 41px 64px;
+}
+
+.form-style {
+    width: 30%;
+}
+}
+
+@media (min-width: 1024px) {
+  .main-header p {
+    margin-top: 15px;
+    font-size: 19px;
+    margin-left: 35px;
+  }
+  .secondary {
+    width: 183%;
+  }
+  header nav {
+    padding: 0px 16px;
+  }
+  header nav ul li a {
+    font-size: 17px;
+    margin-right: 9px;
+  }
+
+  header nav ul li a:hover {
+    transition: all 300ms;
+    text-decoration: underline;
+    color: #043988;
+  }
+ 
+  
+
+  /* footer */
+
+  .contenedor-footer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .contenedor-footer article {
+    width: 30%;
+  }
+
+  footer article div i:hover {
+    color: #5297ff;
+  }
+}

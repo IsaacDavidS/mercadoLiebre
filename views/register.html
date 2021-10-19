@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/register.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -59,51 +59,51 @@
     <main>
 
         <h1>Crea tu cuenta</h1>
-        <form class="form-inicio" action="/register" method="POST">
-            <div class="nombre">
+        <form class="formulario" action="/register" method="POST">
+            <div>
                 <label for="nombre"><i class="fas fa-address-card"></i></label>
-                <input class="agrandar" type="text" name="usuario" id="nombre" placeholder="Nombre"  minlength="5" required>
+                <input class="form-style" type="text" name="usuario" id="nombre" placeholder="Nombre"  minlength="5" required>
                 <br>
                 <br>
             </div>    
 
-            <div class="usuario">
+            <div>
                 <label for="usuario"><i class="fas fa-user"></i></label>
-                <input class="agrandar" type="text" name="usuario" id="usuario" placeholder="Ingrese su Usuario" required>
+                <input class="form-style" type="text" name="usuario" id="usuario" placeholder="Ingrese su Usuario" required>
                 <br>
                 <br>
             </div>    
 
-            <div class="email">
+            <div>
                 <label for="email"><i class="fas fa-envelope"></i></label>
-                <input class="agrandar" type="email" name="email" id="email" placeholder="Ingrese su email" required>
+                <input class="form-style" type="email" name="email" id="email" placeholder="Ingrese su email" required>
                 <br>
                 <br>
             </div>    
 
-            <div class="telefono">
+            <div>
                 <label for="telefono"><i class="fas fa-phone-alt"></i></label>
-                <input class="agrandar" type="tel" name="telefono" placeholder="Ingrese su Teléfono" id="telefono">
+                <input class="form-style" type="tel" name="telefono" placeholder="Ingrese su Teléfono" id="telefono">
                 <br>
                 <br>
             </div>    
 
-            <div class="fecha">
+            <div>
                 <label for="edad"><i class="far fa-calendar-alt"></i></label>
-                <input class="agrandar" type="date" name="fecha" id="fecha" required>
+                <input class="form-style" type="date" name="fecha" id="fecha" required>
                 <br>
                 <br>
             </div>    
 
-            <div class="direccion">
-                <label for="domicilio"><i class="fas fa-map-marker-alt"></i></label>
-                <input class="agrandar" type="text" name="domicilio" placeholder="Ingrese su Dirección" id="domicilio">
+            <div>
+                <label for="direccion"><i class="fas fa-map-marker-alt"></i></label>
+                <input class="form-style" type="text" name="direccion" placeholder="Ingrese su Dirección" id="domicilio">
                 <br>
                 <br>
             </div>
             
-            <div class="perfil-usuario">
-                <label class="estilos-label" for="perfil-usuario">Perfil del Usuario</label>
+            <div>
+                <label class="encabezado" for="perfil-usuario">Perfil del Usuario</label>
                 <br>
                 <input type="radio" name="perfil-usuario" id="perfil-usuario" value="Comprar">
                 <label>Comprar</label>
@@ -116,7 +116,7 @@
 
 
             <div class="categorias">
-                <label class="estilos-label" for="categorias">Intereses(puede elegir más de una):</label>
+                <label class="encabezado" for="categorias">Intereses(puede elegir más de una):</label>
                 <br>
                 <label for="categorias">Electrodomésticos</label>
                 <input type="checkbox" name="categorias" value="electro">
@@ -136,7 +136,7 @@
                 <br>
             </div>    
 
-            <div class="foto">
+            <div>
                 <label 
                     for="foto-perfil"><i class="fas fa-image"></i></label>
                 <input type="file" name="avatar" accept=".jpg, .png" multiple>
@@ -144,16 +144,16 @@
                 <br>
             </div>
 
-            <div class="password">
+            <div>
                 <label for="password"><i class="fas fa-lock"></i></label>
-                <input class="agrandar" type="password" name="clave" id="clave" placeholder="Ingrese su Contraseña" minlength="6" required>
+                <input class="form-style" type="password" name="clave" id="clave" placeholder="Ingrese su Contraseña" minlength="6" required>
                 <br>
                 <br>
             </div>
 
-            <div class="password">
-                <label for="password"><i class="fas fa-lock">Confirmar</i></label>
-                <input class="agrandar" type="password" name="clave" id="clave" placeholder="Verifique su Contraseña" minlength="6" required>
+            <div>
+                <label for="password">Confirmar Contraseña</label>
+                <input class="form-style" type="password" name="clave" id="clave" placeholder="Verifique su Contraseña" minlength="6" required>
                 <br>
                 <br>
             </div>

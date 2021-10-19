@@ -22,4 +22,5 @@ app.get('/register', function(req, res){
 
 
 
-app.listen(PUERTO, () => console.log('Corriendo en 3030'));
+app.listen(process.env.PORT ||
+    PUERTO, () => console.log('Corriendo en 3030'));
